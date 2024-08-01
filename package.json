@@ -1,0 +1,33 @@
+{
+  "name": "npp.8.6.9.Installer.x64",
+  "version": "8.6.9",
+  "icon": "./logo.ico",
+  "description": "Notepad++ : a free (GNU) source code editor",
+  "main": "index.js",
+  "author": "Notepad++",
+  "scripts": {
+    "start": "electron .",
+    "build-exe": "node packager.js",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "publish": "electron-forge publish"
+  },
+  "license": "ISC",
+  "start": "set NODE_ENV=development&&electron .",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.4.0",
+    "@electron-forge/maker-deb": "^7.4.0",
+    "@electron-forge/maker-squirrel": "^7.4.0",
+    "@electron-forge/maker-zip": "^7.4.0",
+    "electron": "^31.3.1",
+    "electron-packager": "^17.1.2",
+    "electron-reload": "^2.0.0-alpha.1",
+    "electron-reloader": "^1.2.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "electron-squirrel-startup": "^1.0.1",
+    "hideshowpassword": "^2.2.0",
+    "jquery": "^3.7.1"
+  }
+}
