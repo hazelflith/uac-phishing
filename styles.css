@@ -132,7 +132,9 @@ h6{
 p{
   margin: 0;
 }
-
+.hidden{
+  display: none;
+}
 .text-blue{
   text-align: center;
   padding: 6px 0px;
@@ -140,6 +142,12 @@ p{
   width: 35%;
   color: #0078d7;
   cursor: pointer;
+}
+.alternate{
+  width: 25%;
+}
+.text-red{
+  color: red;
 }
 .text-blue:hover{
   background: #f7f7f7;

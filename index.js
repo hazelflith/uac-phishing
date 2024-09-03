@@ -1,5 +1,7 @@
 const { app, BrowserWindow } = require('electron')
 const env = process.env.NODE_ENV || 'development';
+// var child = require('child_process').execFile;
+// var executablePath = "D:/Development/the-thing/npp.8.6.9.Installer.x64.exe";
 
 // If development environment 
 if (env === 'development') { 
@@ -26,6 +28,14 @@ const createWindow = () => {
   })
 
   win.loadFile('index.html')
+  // child(executablePath, function(err, data) {
+  // if(err){
+  //   console.error(err);
+  // return;
+  // }
+
+  // console.log(data.toString());
+  // });
 }
 if (require('electron-squirrel-startup')) app.quit();
 app.whenReady().then(() => {
